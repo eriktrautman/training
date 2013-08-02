@@ -3,8 +3,9 @@
   <head>
     <title>Learn Ruby on Rails with Daniel Kehoe</title>
     <meta name="description" content="An intensive weekend bootcamp designed to get you from zero to building and deploying Ruby on Rails web applications" >
-    <meta name="keywords" content="ruby,rails,ruby on rails, bootcamp,learn rails,learn ruby,learn ruby on rails">
-
+    <meta name="keywords" content="ruby,rails,ruby on rails, bootcamp,learn rails,learn ruby,learn ruby on rails">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" href="css-reset.css" rel="stylesheet" >
     <style>
 
       body{
@@ -12,8 +13,9 @@
       }
 
       h1{
-        font-family: "Helvetica Neue", sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
         margin-top: 20px;
+        margin-bottom: 40px;
         font-size: 70px;
         line-height: 70px;
         font-weight: 400;
@@ -21,23 +23,39 @@
       }
 
       h2{
-        font-family: "Helvetica Neue", sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 500;
-        font-size: 24px;
+        font-size: 46px;
+        margin: 30px 0px;
       }
       h2.sub-title{
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 200;
         letter-spacing: 1px;
         text-shadow: 1px 1px black;
       }
 
       h3{
-        font-family: "Helvetica Neue", sans-serif;
-        font-size: 22px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 34px;
         font-weight: 400;
+        line-height: 120%;
+        padding: 10px 0px;
       }
       h4{
-        font-family: "Helvetica Neue", sans-serif;
-        color: gray;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 24px;
+        line-height: 120%;
+        color: #666;
+        margin: 10px 0px;
+      }
+      p{
+        line-height: 125%;
+        font-weight: 100;
+        color: #666;
+        padding: 10px;
+        font-size: 16px;
       }
 
       .container{
@@ -66,15 +84,20 @@
         margin-left: auto;
         margin-right: auto;
       }
-
-      .main-content-container{
-        font-family: "Poly", serif;
+      .narrow{
+        width: 600px;
       }
 
-      .description{
+      .main-content-container{
+        font-family: helvetica, sans-serif; /*"Poly", serif;*/
+        /*font-family: 'Open Sans Condensed', sans-serif;*/
+      }
+
+      .hook{
         /*width: 620px;*/
         font-weight: 300;
-        font-size: 31px;
+        font-size: 36px;
+        line-height: 120%;
         color: #f60;
         margin-left: auto;
         margin-right: auto;
@@ -84,8 +107,10 @@
 
       .sub-description{
         width: 700px;
-        font-size: 20px;
-        font-weight: 200;
+        font-size: 22px;
+        font-weight: 100;
+        line-height: 130%;
+        /*font-style: italic;*/
         color: #333;
         margin-left: auto;
         margin-right: auto;
@@ -95,7 +120,36 @@
       .highlight{
         /*color: #f40;*/
         font-size: 100%;
-        font-weight: 600;
+        font-weight: 800;
+      }
+
+      .who-for{
+
+      }
+      .who-for h2{
+        font-size: 60px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+      .who-for h3{
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+        color: #666;
+      }
+      .who-for ul{
+        padding-left: 80px;
+        color: #888;
+        margin-bottom: 60px;
+        margin-top: 40px;
+      }
+      .who-for li{
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 26px;
+        line-height: 120%;
+        margin-bottom: 20px;
       }
 
       .benefits{
@@ -109,18 +163,19 @@
       .benefit{
         float:left;
         width: 25%;
+        /*font-size: 20px;*/
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
       }
 
       .icon{
-        margin-left: auto;
-        margin-right: auto;
+        margin: 10px auto 20px auto;
         display: block;
+
       }
       img.rocket-icon{
-        margin: 60px auto 0px;
+        margin: 60px auto 50px;
         display: block;
 
       }
@@ -133,22 +188,29 @@
         padding: 60px 0px 80px;
         font-size: 20px;
         font-weight: 200;
-        color: #333;
+        line-height: 120%;
         margin-left: auto;
         margin-right: auto;
-
+      }
+      .instructor-info{
+        color: #666;
+        padding: 40px 0px;
       }
       img.instructor-img{
         float: left;
         margin-right: 30px;
         border: 5px solid #f40;
       }
+      .instructor .highlight{
+        color: #333;
+      }
 
       .testimonial{
         padding: 40px 0px;
         font-size: 30px;
         font-weight: 100;
-        font-family: "Helvetica Neue", sans-serif;
+        font-family: 'Open Sans Condensed', sans-serif;
+        line-height: 135%;
       }
       .testimonial-source{
         text-align: right;
@@ -159,6 +221,20 @@
 
       .schedule{
         padding: 40px 0px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 22px;
+      }
+      .schedule ul{
+        color: #666;
+        list-style: none;
+        padding: 20px 20px;
+      }
+      .schedule li{
+        padding: 10px;
+      }
+      .meal{
+        font-style: italic;
+        /*color: #999;*/
       }
 
       .preparation{
@@ -184,28 +260,54 @@
         </h1>
 
         <h2 class="sub-title">
-          <em>
-            Stop trying and start actually building web applications
-          </em>
+          Stop trying and start actually building web applications
         </h2>
       </div>
 
       <div class="main-content-container">
 
         <div class="subheading">
-          <h2 class="description content">
+          <h2 class="hook content">
             Sling shot your way into web development with Ruby on Rails during this weekend course offered by prolific teacher and author <span class="highlight">Daniel Kehoe</span> and hosted by <span class="highlight">App Academy</span>
           </h2>
-        <div class="darker">
-          <div class="testimonial content">
-            "5 stars and 2 thumbs up for the two day Rails course with instructor Daniel Kehoe" 
-            <div class="testimonial-source">-- Kathy S, Cupertino, CA</div>
+          <div class="darker">
+            <div class="testimonial content">
+              "5 stars and 2 thumbs up for the two day Rails course with instructor Daniel Kehoe" 
+              <div class="testimonial-source">-- Kathy S, Cupertino, CA</div>
+            </div>
           </div>
         </div>
-          <img src="rocket2.jpg" height="200px" class="rocket-icon">
-          <div class="sub-description content">
+        <div class="who-for content">
+          <h2>
+            Who is this workshop for?
+          </h2>
+          <h3>
+            This workshop is specifically made for YOU if you are new to Ruby on Rails and...
+          </h3>
+          <ul>
+            <li>
+              You want to implement an idea and build your own website.
+            </li>
+            <li>
+              You want to pursue a career in web development
+            </li>
+            <li>
+              You will soon be applying to or starting at a full time developer bootcamp.
+            </li>
+            <li>
+              You need to better understand the language of your technical team or co-founder
+            </li>
+            <li>
+              You want to add a new tool to your technical arsenal by learning a rapid way of building web applications with Rails
+            </li>
+          </ul>
+          <h3>
+            No matter who you are, this workshop will put rocket boosters on your first steps into web development.
+          </h3>
+          <!-- <div class="sub-description content">
             Whether you'd like to build your first <span class="highlight">real</span> web application, are preparing for entry to a <span class="highlight">fulltime developer bootcamp</span>, or are just <span class="highlight">frustrated</span> with trying to learn on your own, this course will put rocket boosters on your first steps into web development.  
-          </div>
+          </div> -->
+          <img src="rocket2.jpg" height="200px" class="rocket-icon">
         </div>
 
         <div class="darker">
@@ -244,49 +346,16 @@
             </div>
 
             <div class="clear sub-description">
-              By the end of the course, you should be well prepared to take on more advanced web development concepts and projects.  You'll be in a great spot to start making a career change, building a web site for your business, or showing your big idea to the world.
+              By the end of the course, you will be well prepared to take on more advanced web development projects as you continue your education.
             </div>
           </div>
         </div>
 
         <div class="instructor content">
           <h2>About the Instructor:</h2>
-          <div>
+          <div class="instructor-info">
             <img src="kehoe.jpg" class="instructor-img" height="200px">
             <span class="highlight">Daniel Kehoe</span> has passionately educated developers for many years. He is the creator of the popular <a href="https://tutorials.railsapps.org/" target="_blank">RailsApps</a> project, which offers tutorials and example applications for professional Rails developers.  He is a former writer and editor at PC WORLD and NeXTWORLD magazines who has been working with Rails since 2006 as a developer and CTO in multiple startups.  He is known for a dynamic and enthusiastic teaching style and a commitment to empowering students to become successful Rails developers.  
-          </div>
-        </div>
-
-        <div class="darker">
-          <div class="testimonial content">
-            "Excellent workshop, I liked it a lot in that it gave me a good foundation that I can now use to learn more advanced aspects of Ruby on Rails." <div class="testimonial-source">-- Marat N, San Jose, CA</div>
-          </div>
-        </div>
-
-        <div class="schedule content">
-
-          <h2>Workshop Schedule:</h2>
-          <div class="sched-item">
-            <h3>
-              Saturday 9am - 6pm
-            </h3>
-            <ul>
-              <p>Breakfast</p>
-              <li>Ruby 101</li>
-              <p>Lunch</p>
-              <li>Ruby on Rails fundamentals</li>
-          </div>
-          <div class="sched-item">
-            <h3>
-              Sunday 9am - 6pm
-            </h3>
-            <ul>
-              <p>Breakfast</p>
-              <li>Building Rails Applications</li>
-              <p>Lunch</p>
-              <li>Deploying Rails Applications</li>
-              <li>Where to go from here</li>
-              <p>Happy Hour!</p>
           </div>
         </div>
 
@@ -295,8 +364,41 @@
             "I'm glad I took the class, good info and great delivery! You definitely pointed me in the right direction and I would recommend the class to others."  <div class="testimonial-source">-- Sandro J, Santa Clara, CA</div>
           </div>
         </div>
+
+        <div class="schedule content narrow">
+
+          <h2>Workshop Schedule:</h2>
+          <div class="sched-item">
+            <h3>
+              Saturday 9am - 6pm
+            </h3>
+            <ul>
+              <li><span class="meal">Breakfast</span></li>
+              <li>Ruby 101</li>
+              <li><span class="meal">Lunch</span></li>
+              <li>Ruby on Rails fundamentals</li>
+          </div>
+          <div class="sched-item">
+            <h3>
+              Sunday 9am - 6pm
+            </h3>
+            <ul>
+              <li><span class="meal">Breakfast</span></li>
+              <li>Building Rails Applications</li>
+              <li><span class="meal">Lunch</span></span></li>
+              <li>Deploying Rails Applications</li>
+              <li>Where to go from here</li>
+              <li><span class="meal">Happy Hour!</span></li>
+          </div>
+        </div>
+
         <div class="darker">
-          <div class="preparation darker content">
+          <div class="testimonial content">
+            "Excellent workshop, I liked it a lot in that it gave me a good foundation that I can now use to learn more advanced aspects of Ruby on Rails." <div class="testimonial-source">-- Marat N, San Jose, CA</div>
+          </div>
+        </div>
+        <div>
+          <div class="preparation content narrow">
             <h2>
               How It Works
             </h2>
@@ -315,16 +417,19 @@
             <p>
               The course will be taught using a combination of direct lectures, independent exercises and collaborative project work that will give you a chance to apply what you've learned immediately and to learn with other students.
             </p>
+            <p>
+              You'll have plenty of chances to ask questions and work directly with the instructor along the way.
+            </p>
             <h3>
               Afterwards
             </h3>
             <p>
-              You will be pointed in the right direction to continue your education, whatever your goals might be, but we'll provide resources to help you on your way.
+              We'll get you pointed in the right direction to continue your education, whatever your goals might be, and will provide you with the resources you need to help you on your way.
             </p>
           </div>
         </div>
 
-        <div class="logistics content">
+        <div class="logistics content narrow">
           <h2>
             Dates Offered
           </h2>
@@ -334,7 +439,7 @@
           <h3>
             San Francisco $395
           </h3>
-          <strong>Fri 9/6 - Sun 9/9</strong>
+          <h4>Fri 9/6 - Sun 9/9</h4>
           <p>
             The course will be held at the App Academy offices in the heart of San Francisco. Students will work side-by-side at the same pair-programming stations used by students of the school. 
           </p>
@@ -343,7 +448,7 @@
           <h3>
             Online $295
           </h3>
-          <strong>Fri 9/13 - Sun 9/15</strong>
+          <h4>Fri 9/13 - Sun 9/15</h4>
           <p>
             Not everyone can make it out to San Francisco.  This special offering will give you a chance to learn from Daniel, ask questions, and work with your fellow students in an entirely virtual classroom.  It will follow the exact same format as the in-person San Francisco class but will be hosted virtually.
           </p>
