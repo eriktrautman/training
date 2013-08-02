@@ -25,7 +25,7 @@
       h2{
         font-family: 'Open Sans Condensed', sans-serif;
         font-weight: 500;
-        font-size: 46px;
+        font-size: 52px;
         margin: 30px 0px;
       }
       h2.sub-title{
@@ -227,7 +227,7 @@
       .schedule ul{
         color: #666;
         list-style: none;
-        padding: 20px 20px;
+        padding: 5px 20px 20px;
       }
       .schedule li{
         padding: 10px;
@@ -243,6 +243,18 @@
 
       .logistics{
         padding: 40px 0px;
+      }
+
+      .signup{
+        min-height: 400px;
+        background-color: white;
+        padding: 40px 10px;
+      }
+      .eventbrite{
+        height: 300px;
+        width: 600px;
+        background-color: orange;
+        margin: 0px auto;
       }
 
     </style>
@@ -272,7 +284,7 @@
           </h2>
           <div class="darker">
             <div class="testimonial content">
-              "5 stars and 2 thumbs up for the two day Rails course with instructor Daniel Kehoe" 
+              "5 stars and 2 thumbs up for the two day Rails course with Daniel Kehoe" 
               <div class="testimonial-source">-- Kathy S, Cupertino, CA</div>
             </div>
           </div>
@@ -365,38 +377,6 @@
           </div>
         </div>
 
-        <div class="schedule content narrow">
-
-          <h2>Workshop Schedule:</h2>
-          <div class="sched-item">
-            <h3>
-              Saturday 9am - 6pm
-            </h3>
-            <ul>
-              <li><span class="meal">Breakfast</span></li>
-              <li>Ruby 101</li>
-              <li><span class="meal">Lunch</span></li>
-              <li>Ruby on Rails fundamentals</li>
-          </div>
-          <div class="sched-item">
-            <h3>
-              Sunday 9am - 6pm
-            </h3>
-            <ul>
-              <li><span class="meal">Breakfast</span></li>
-              <li>Building Rails Applications</li>
-              <li><span class="meal">Lunch</span></span></li>
-              <li>Deploying Rails Applications</li>
-              <li>Where to go from here</li>
-              <li><span class="meal">Happy Hour!</span></li>
-          </div>
-        </div>
-
-        <div class="darker">
-          <div class="testimonial content">
-            "Excellent workshop, I liked it a lot in that it gave me a good foundation that I can now use to learn more advanced aspects of Ruby on Rails." <div class="testimonial-source">-- Marat N, San Jose, CA</div>
-          </div>
-        </div>
         <div>
           <div class="preparation content narrow">
             <h2>
@@ -429,35 +409,75 @@
           </div>
         </div>
 
-        <div class="logistics content narrow">
-          <h2>
-            Dates Offered
-          </h2>
-          <p>
-            The course will be offered twice, once in San Francisco and once in a special live online offering the following weekend.  Space is very limited in both in order to make sure students get plenty of time to ask questions.
-          </p>
-          <h3>
-            San Francisco $395
-          </h3>
-          <h4>Fri 9/6 - Sun 9/9</h4>
-          <p>
-            The course will be held at the App Academy offices in the heart of San Francisco. Students will work side-by-side at the same pair-programming stations used by students of the school. 
-          </p>
+        <div class="darker">
+          <div class="testimonial content">
+            "Excellent workshop, I liked it a lot in that it gave me a good foundation that I can now use to learn more advanced aspects of Ruby on Rails." <div class="testimonial-source">-- Marat N, San Jose, CA</div>
+          </div>
+        </div>
+        
+        <div class="schedule content narrow">
+
+          <h2>Workshop Schedule:</h2>
+          <div class="sched-item">
+            <h3>
+              Saturday 9am - 6pm
+            </h3>
+            <ul>
+              <li><span class="meal">Breakfast</span></li>
+              <li>Ruby 101</li>
+              <li><span class="meal">Lunch</span></li>
+              <li>Ruby on Rails fundamentals</li>
+          </div>
+          <div class="sched-item">
+            <h3>
+              Sunday 9am - 6pm
+            </h3>
+            <ul>
+              <li><span class="meal">Breakfast</span></li>
+              <li>Building Rails Applications</li>
+              <li><span class="meal">Lunch</span></span></li>
+              <li>Deploying Rails Applications</li>
+              <li>Where to go from here</li>
+              <!-- <li><span class="meal">Happy Hour!</span></li> -->
+          </div>
+        </div>
+
+        <div class="darker">
+          <div class="logistics content narrow">
+            <h2>
+              Dates Offered
+            </h2>
+            <p>
+              The course will be given twice, once in San Francisco and once in a special live online offering the following weekend.  Space is very limited in both in order to make sure students get plenty of time to ask questions.
+            </p>
+            <h3>
+              San Francisco
+            </h3>
+            <h4>Fri 9/6 - Sun 9/9</h4>
+            <p>
+              The course will be held at the App Academy offices in the heart of San Francisco. Students will work side-by-side with their own laptops and at the same pair-programming stations used by students of the school. 
+            </p>
 
 
-          <h3>
-            Online $295
-          </h3>
-          <h4>Fri 9/13 - Sun 9/15</h4>
-          <p>
-            Not everyone can make it out to San Francisco.  This special offering will give you a chance to learn from Daniel, ask questions, and work with your fellow students in an entirely virtual classroom.  It will follow the exact same format as the in-person San Francisco class but will be hosted virtually.
-          </p>
+            <h3>
+              Online
+            </h3>
+            <h4>Fri 9/13 - Sun 9/15</h4>
+            <p>
+              Not everyone can make it out to San Francisco.  This special offering will give you a chance to learn from Daniel, ask questions, and work with your fellow students in an entirely virtual classroom.  It will follow the exact same format as the in-person San Francisco class but will be hosted virtually.
+            </p>
 
+          </div>
         </div>
       </div>
 
-      <div class="signup">
-        <h2>SIGN UP HERE!</h2>
+      <div>
+        <div class="signup content">
+          <h2>SIGN UP HERE!</h2>
+          <div class="eventbrite">
+            see http://developer.eventbrite.com/doc/widgets/
+          </div>
+        </div>
       </div>
     </div>
   </body>
