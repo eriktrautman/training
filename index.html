@@ -253,7 +253,7 @@
       .signup{
         /*min-height: 400px;*/
         /*background-color: white;*/
-        padding: 40px 10px;
+        padding: 20px 10px;
       }
       .eventbrite{
         /*height: 300px;*/
@@ -265,6 +265,42 @@
         padding: 40px 0px;
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 26px;
+        text-align: center;
+      }
+      .email-form{
+        padding: 0px 10px 40px 10px;
+        text-align: center;
+        /*text-align: right;*/
+        font-style: italic;
+        font-size: 20px;
+        font-family: 'Open Sans Condensed', sans-serif;
+      }
+      .email-form input[type="email"]{
+        width: 300px;
+        height: 25px;
+        padding: 1px 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: Helvetica, sans-serif;
+      }
+      .email-form label{
+        /*margin-right: 80px;*/
+      }
+      .button{
+        width: 120px;
+        font-size: 16px;
+        line-height: 50px;
+        padding-top: 10px;
+        height: 75px;
+      }
+      .sign-up-here{
+        color: #333;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      .see-you-there{
+        text-align: center;
       }
 
     </style>
@@ -326,9 +362,6 @@
           <h3>
             No matter who you are, this workshop will put rocket boosters on your first steps into web development.
           </h3>
-          <!-- <div class="sub-description content">
-            Whether you'd like to build your first <span class="highlight">real</span> web application, are preparing for entry to a <span class="highlight">fulltime developer bootcamp</span>, or are just <span class="highlight">frustrated</span> with trying to learn on your own, this course will put rocket boosters on your first steps into web development.  
-          </div> -->
           <img src="rocket2.jpg" height="200px" class="rocket-icon">
         </div>
 
@@ -464,51 +497,89 @@
           <span class="in-person-only">* Listed meals will be provided for the in-person class</span> 
         </div>
 
-        <div class="darker">
-          <div class="logistics content narrow">
-            <h2>
-              Dates Offered
-            </h2>
-            <p>
-              The course will be given twice, once in San Francisco and once in a special live online offering the following weekend.  Space is very limited in both in order to make sure students get plenty of time to ask questions.
-            </p>
-            <h3>
-              San Francisco
-            </h3>
-            <h4>Fri 9/6 - Sun 9/9</h4>
-            <p>
-              The course will be held at the App Academy offices in the heart of San Francisco. Students will work side-by-side with their own laptops and at the same pair-programming stations used by students of the school. 
-            </p>
-            <div class="signup content">
-              <!-- <h2>SIGN UP HERE!</h2> -->
-              <div class="eventbrite">
-                <div style="width:100%; text-align:left;" >
-                  <iframe src="http://www.eventbrite.com/tickets-external?eid=7745335507&ref=etckt" frameborder="0"  width="100%" height="256" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
-                </div>
-              </div>
-            </div>
-
-
-            <h3>
-              Online
-            </h3>
-            <h4>Fri 9/13 - Sun 9/15</h4>
-            <p>
-              Not everyone can make it out to San Francisco.  This special offering will give you a chance to learn from Daniel, ask questions, and work with your fellow students in an entirely virtual classroom.  It will follow the exact same format as the in-person San Francisco class but will be hosted online.  This is not a recording, it is a realtime class.
-            </p>
-            <div class="signup content">
-              <!-- <h2>SIGN UP HERE!</h2> -->
-              <div class="eventbrite">
-                <div style="width:100%; text-align:left;" >
-                  <iframe src="http://www.eventbrite.com/tickets-external?eid=7746123865&ref=etckt" frameborder="0"  width="100%" height="256" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+        <div class="logistics darker">
+          <div class="darker">
+            <div class="content narrow">
+              <h2>
+                Dates Offered
+              </h2>
+              <p>
+                The course will be given twice, once in San Francisco and once in a special live online offering the following weekend.  Space is very limited in both in order to make sure students get plenty of time to ask questions.
+              </p>
+              <br>
+              <h3>
+                San Francisco
+              </h3>
+              <h4>Fri 9/6 - Sun 9/9</h4>
+              <p>
+                The course will be held at the App Academy offices in the heart of San Francisco. Students will work side-by-side with their own laptops and at the same pair-programming stations used by students of the school. 
+              </p>
+              <!-- <p class="sign-up-here">Sign up for San Francisco here:</p> -->
+              <div class="signup content narrow">
+                <!-- <h2>SIGN UP HERE!</h2> -->
+                <div class="eventbrite">
+                  <div style="width:100%; text-align:left;" >
+                    <iframe src="http://www.eventbrite.com/tickets-external?eid=7745335507&ref=etckt" frameborder="0"  width="100%" height="225" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="darker">
+            <div class="email-form content narrow">
+              <form action="http://theodinproject.us7.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="1046507d99d5aae6db69bcce2">
+                <input type="hidden" name="id" value="5b5f83b3bb">
+                <input type="hidden" name=""
+                <label for="MERGE0">Can't make this one? No Problem! Get notified when the workshop is offered again:</label>
+                <br>
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email address" value>
+                <input type="submit" value="Notify Me!" class="button">
+              </form>
+            </div>
+          </div>
+
+          <div class="darker">
+            <div class="content narrow">
+              <h3>
+                Online
+              </h3>
+              <h4>Fri 9/13 - Sun 9/15</h4>
+              <p>
+                Not everyone can make it out to San Francisco.  This special offering will give you a chance to learn from Daniel, ask questions, and work with your fellow students in an entirely virtual classroom.  It will follow the exact same format as the in-person San Francisco class but will be hosted online.  This is not a recording, it is a realtime class.
+              </p>
+              <div class="signup content narrow">
+                <!-- <h2>SIGN UP HERE!</h2> -->
+                <div class="eventbrite">
+                  <div style="width:100%; text-align:left;" >
+                    <iframe src="http://www.eventbrite.com/tickets-external?eid=7746123865&ref=etckt" frameborder="0"  width="100%" height="150" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="darker">
+            <div class="email-form content narrow">
+              <form action="http://theodinproject.us7.list-manage.com/subscribe/post" method="POST">
+                <input type="hidden" name="u" value="1046507d99d5aae6db69bcce2">
+                <input type="hidden" name="id" value="5b5f83b3bb">
+                <input type="hidden" name=""
+                <label for="MERGE0">Can't make this one? No Problem! Get notified when the workshop is offered again:</label>
+                <br>
+                <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email address" value>
+                <input type="submit" value="Notify Me!" class="button">
+              </form>
+            </div>
+          </div>
+          <h2 class="see-you-there">We'll See You There!</h2>
         </div>
 
-        <div class="contact content">
-          Want more information? Call 978.760.0519 or <a href="mailto:daniel@danielkehoe.com">Email Daniel</a>
+        <div>
+          <div class="contact content">
+            Want more information? Call 978.760.0519 or <a href="mailto:daniel@danielkehoe.com">Email Daniel</a>
+          </div>
         </div>
       </div>
     </div>
